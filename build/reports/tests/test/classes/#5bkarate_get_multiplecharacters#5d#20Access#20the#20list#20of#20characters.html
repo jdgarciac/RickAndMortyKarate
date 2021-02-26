@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class [karate_get_multiplecharacters] Access the list of characters</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class [karate_get_multiplecharacters] Access the list of characters</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; [karate_get_multiplecharacters] Access the list of characters</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">4.390s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1:7] Get a single character</td>
+<td class="success">4.390s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>09:23:41.852 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+09:23:41.860 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+09:23:43.111 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+09:23:43.134 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+09:23:43.141 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; GET https://rickandmortyapi.com/api/character/1,183
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: rickandmortyapi.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)
+
+09:23:43.146 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}-&gt;https://rickandmortyapi.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+09:23:43.190 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}-&gt;https://rickandmortyapi.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+09:23:43.194 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}-&gt;https://rickandmortyapi.com:443
+09:23:43.288 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to rickandmortyapi.com/67.207.80.24:443
+09:23:43.289 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to rickandmortyapi.com/67.207.80.24:443 with timeout 30000
+09:23:43.482 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+09:23:43.483 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+09:23:43.483 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+09:23:43.767 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+09:23:43.767 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+09:23:43.767 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+09:23:43.768 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.rickandmortyapi.com
+09:23:43.769 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.rickandmortyapi.com, rickandmortyapi.com]
+09:23:43.769 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=R3, O=Let's Encrypt, C=US
+09:23:43.779 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.2:28361&lt;-&gt;67.207.80.24:443
+09:23:43.780 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+09:23:43.780 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/character/1,183 HTTP/1.1
+09:23:43.780 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+09:23:43.781 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+09:23:43.786 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; GET /api/character/1,183 HTTP/1.1
+09:23:43.787 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: rickandmortyapi.com
+09:23:43.788 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+09:23:43.788 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)
+09:23:43.788 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+09:23:43.789 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;GET /api/character/1,183 HTTP/1.1[\r][\n]&quot;
+09:23:43.789 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: rickandmortyapi.com[\r][\n]&quot;
+09:23:43.789 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+09:23:43.790 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)[\r][\n]&quot;
+09:23:43.790 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+09:23:43.791 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+09:23:43.878 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+09:23:43.879 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+09:23:43.879 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Cache-Control: max-age=259200[\r][\n]&quot;
+09:23:43.879 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Cache-Control: public[\r][\n]&quot;
+09:23:43.879 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+09:23:43.880 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Fri, 26 Feb 2021 13:39:58 GMT[\r][\n]&quot;
+09:23:43.880 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Etag: W/&quot;ad1-QnpEVPA6sR0OjzN229q5lQUl3Sg&quot;[\r][\n]&quot;
+09:23:43.880 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Expires: Mon, 01 Mar 2021 13:39:58 GMT[\r][\n]&quot;
+09:23:43.880 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Netlify[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-Powered-By: Express[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Encoding: gzip[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 446[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Age: 2624[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Vary: Accept-Encoding[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;X-NF-Request-ID: 06d78d9a-8b9c-4570-8ef0-cd3c4d98a7d0-20133293[\r][\n]&quot;
+09:23:43.891 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+09:23:43.898 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Access-Control-Allow-Origin: *
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Cache-Control: max-age=259200
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Cache-Control: public
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: application/json; charset=utf-8
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Fri, 26 Feb 2021 13:39:58 GMT
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Etag: W/&quot;ad1-QnpEVPA6sR0OjzN229q5lQUl3Sg&quot;
+09:23:43.899 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Expires: Mon, 01 Mar 2021 13:39:58 GMT
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Server: Netlify
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-Powered-By: Express
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Encoding: gzip
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 446
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Age: 2624
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Connection: keep-alive
+09:23:43.900 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Vary: Accept-Encoding
+09:23:43.901 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; X-NF-Request-ID: 06d78d9a-8b9c-4570-8ef0-cd3c4d98a7d0-20133293
+09:23:43.915 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+09:23:43.926 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xb5][0xd6]Qk[0xdb]0[0x10][0x7][0xf0][0xaf][0x12][0xf4][0xb4]B[0x12][0xfb]$'q[0xfc]V[0xd6]B[0x19][0xec][0xa5][0xdb][0xd3]J[0x1f][0xe][0xe5][0x88][0xd5][0xda][0xb2][0x90][0x95]BV[0xf6][0xdd]'C[0xbb]=ll[0xf9][0xa7][0x14][0xc][0xb6][0x8f][0xbf]O[0x98][0x1f][0xb6][0xee][0xee]Y[0xb9][0x9d]jh[0xae]&lt;[0xf7][0xa2][0x1a]u[0xeb][0xec][0xe3][0xec][0xb]{[0xdb][0xca]w5Wc[0xe2]t[0x18]s[0xfd][0xb2]sO2[0x15][0x82]X'S[0xe5][0xe6][0xd0][0xb3][0xcf][0x95]t[0xc][0xd3][0x83][0xf9]j/~'1_&#x7f;[0xe6]n[0xca][0xe][0xd1][0xed][0x9d]W[0xcd][0xf3]k[0xf3]k[0x8e][0xa9][0x9d]}[0xf8][0xb8] [0xb3][0xb9][0xc8][0x81]C[0xec]r[0xb5]M)[0x8c]MQ[0xc4][0xbc]4[0xfb]]?[0xc4]t[0xe4][0xe0][0x96]v[0xe8][0x8b]|.[0xba][0xc1]rr[0x83]/H[0xfd][0x98][0xab][0xd7][0xbb]?[0xdb][0xde]J[0xe8][0xd8]J/&gt;[0xcd][0xae]\&gt;[0x8d]9v[0xc6]2[0xba][0x9c][0xd6]q=[0xef][0xe5][0x84][0xc7]l[0xcb][0x91]m[0x92]X[0xf0][0x13]'[0x8e][0x5]-[0x1f][0x82][0xec][0xf3][0xb2][0x12][0xdc]8[0xec]r[0x8f][0xbb][0xff]6y[0x89][0xe6]7[0x9c][0x9f][0x9c][0xd5]@[0xd6][0x0][0xd9][\n]&quot;
+09:23:43.926 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0xc8][0xae][0x80][0xec][0x1a][0xc8]n[0x80]l[\r]d[0xb7]@[0x96]J$[0x8c][0xc8][0x11]BG[0x88][0x1d]!x[0x84][0xe8][0x11][0xc2]G[0x88][0x1f]![0x80][0x84][0x8]jDPC[0xdf][0x1e]&quot;[0xa8][0x11]A[0x8d][0x8]jDP#[0x82][0x1a][0x11][0xd4][0x88][0xa0]F[0x4][\r]&quot;h[0x10]A[0x3][0xfd]&gt;[0x11]A[0x83][0x8][0x1a]D[0xd0] [0x82][0x6][0x11]4[0x88][0xa0]A[0x4]+D[0xb0]&quot;u&#x7f;[0xea]v[0xfd]{[0xdf][0x9d][0xd8]m[0x14]N[0x92]'[0x19][0xa5]K[0xda],[0x88][0x16]e[0xf5][0x95][0xea][0xa6][0xca][0xc7]z[0xa9]W[0xe5][0xb7][0xbc][0xa7][0xbf][0xcc]:[0xb5][0xf9]5[0xed]|[0x1a]Z[0xef][0x8f][0xb3]+[0x9][0xe1][0xfd][0x86][0x9d]UY^[0x9e]3[0x86][0x98]&#x7f;[0x8f];ol|[0xfe]|S[0x9b]7L8[0xf5]Y[0xc2][0xb5][0xf9][0x8b][0xb1]^[0xe8][0xed]d[0xbc][0xa2]Fo[0x97][0xeb][0xad][0xc9][0xc6][0xf7]?[0x1][0xf3][0xb][0x13][0x13][0xd1][\n]&quot;
+09:23:43.927 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[0x0][0x0]&quot;
+09:23:43.927 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}-&gt;https://rickandmortyapi.com:443] can be kept alive indefinitely
+09:23:43.928 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+09:23:43.928 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}-&gt;https://rickandmortyapi.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+09:23:43.928 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 779,93
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 2624
+1 &lt; Cache-Control: [max-age=259200, public]
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 26 Feb 2021 13:39:58 GMT
+1 &lt; Etag: W/&quot;ad1-QnpEVPA6sR0OjzN229q5lQUl3Sg&quot;
+1 &lt; Expires: Mon, 01 Mar 2021 13:39:58 GMT
+1 &lt; Server: Netlify
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-NF-Request-ID: 06d78d9a-8b9c-4570-8ef0-cd3c4d98a7d0-20133293
+1 &lt; X-Powered-By: Express
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Rick Sanchez&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-137)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/1&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (Replacement Dimension)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/20&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/1.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/1&quot;,&quot;https://rickandmortyapi.com/api/episode/2&quot;,&quot;https://rickandmortyapi.com/api/episode/3&quot;,&quot;https://rickandmortyapi.com/api/episode/4&quot;,&quot;https://rickandmortyapi.com/api/episode/5&quot;,&quot;https://rickandmortyapi.com/api/episode/6&quot;,&quot;https://rickandmortyapi.com/api/episode/7&quot;,&quot;https://rickandmortyapi.com/api/episode/8&quot;,&quot;https://rickandmortyapi.com/api/episode/9&quot;,&quot;https://rickandmortyapi.com/api/episode/10&quot;,&quot;https://rickandmortyapi.com/api/episode/11&quot;,&quot;https://rickandmortyapi.com/api/episode/12&quot;,&quot;https://rickandmortyapi.com/api/episode/13&quot;,&quot;https://rickandmortyapi.com/api/episode/14&quot;,&quot;https://rickandmortyapi.com/api/episode/15&quot;,&quot;https://rickandmortyapi.com/api/episode/16&quot;,&quot;https://rickandmortyapi.com/api/episode/17&quot;,&quot;https://rickandmortyapi.com/api/episode/18&quot;,&quot;https://rickandmortyapi.com/api/episode/19&quot;,&quot;https://rickandmortyapi.com/api/episode/20&quot;,&quot;https://rickandmortyapi.com/api/episode/21&quot;,&quot;https://rickandmortyapi.com/api/episode/22&quot;,&quot;https://rickandmortyapi.com/api/episode/23&quot;,&quot;https://rickandmortyapi.com/api/episode/24&quot;,&quot;https://rickandmortyapi.com/api/episode/25&quot;,&quot;https://rickandmortyapi.com/api/episode/26&quot;,&quot;https://rickandmortyapi.com/api/episode/27&quot;,&quot;https://rickandmortyapi.com/api/episode/28&quot;,&quot;https://rickandmortyapi.com/api/episode/29&quot;,&quot;https://rickandmortyapi.com/api/episode/30&quot;,&quot;https://rickandmortyapi.com/api/episode/31&quot;,&quot;https://rickandmortyapi.com/api/episode/32&quot;,&quot;https://rickandmortyapi.com/api/episode/33&quot;,&quot;https://rickandmortyapi.com/api/episode/34&quot;,&quot;https://rickandmortyapi.com/api/episode/35&quot;,&quot;https://rickandmortyapi.com/api/episode/36&quot;,&quot;https://rickandmortyapi.com/api/episode/37&quot;,&quot;https://rickandmortyapi.com/api/episode/38&quot;,&quot;https://rickandmortyapi.com/api/episode/39&quot;,&quot;https://rickandmortyapi.com/api/episode/40&quot;,&quot;https://rickandmortyapi.com/api/episode/41&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/1&quot;,&quot;created&quot;:&quot;2017-11-04T18:48:46.250Z&quot;},{&quot;id&quot;:183,&quot;name&quot;:&quot;Johnny Depp&quot;,&quot;status&quot;:&quot;Alive&quot;,&quot;species&quot;:&quot;Human&quot;,&quot;type&quot;:&quot;&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;origin&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;location&quot;:{&quot;name&quot;:&quot;Earth (C-500A)&quot;,&quot;url&quot;:&quot;https://rickandmortyapi.com/api/location/23&quot;},&quot;image&quot;:&quot;https://rickandmortyapi.com/api/character/avatar/183.jpeg&quot;,&quot;episode&quot;:[&quot;https://rickandmortyapi.com/api/episode/8&quot;],&quot;url&quot;:&quot;https://rickandmortyapi.com/api/character/183&quot;,&quot;created&quot;:&quot;2017-12-29T18:51:29.693Z&quot;}]
+
+09:23:43.933 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.7</a> at 26/02/2021 09:23:44 AM</p>
+</div>
+</div>
+</body>
+</html>
