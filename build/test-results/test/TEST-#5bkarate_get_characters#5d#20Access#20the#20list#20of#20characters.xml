@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="[karate_get_characters] Access the list of characters" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-26T16:27:22" hostname="QVT1MDEWIN11" time="2.826">
+  <properties/>
+  <testcase name="[1:7] Get a single character" classname="[karate_get_characters] Access the list of characters" time="2.826"/>
+  <system-out><![CDATA[11:27:23.307 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+11:27:23.316 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+11:27:24.477 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+11:27:24.502 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+11:27:24.512 [Test worker] DEBUG com.intuit.karate - request:
+1 > GET https://rickandmortyapi.com/api/character/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: rickandmortyapi.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)
+
+11:27:24.517 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {s}->https://rickandmortyapi.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+11:27:24.551 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {s}->https://rickandmortyapi.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+11:27:24.554 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {s}->https://rickandmortyapi.com:443
+11:27:24.619 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to rickandmortyapi.com/52.44.140.30:443
+11:27:24.619 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Connecting socket to rickandmortyapi.com/52.44.140.30:443 with timeout 30000
+11:27:24.829 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+11:27:24.829 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+11:27:24.830 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Starting handshake
+11:27:25.106 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory - Secure session established
+11:27:25.106 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated protocol: TLSv1.2
+11:27:25.106 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+11:27:25.107 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer principal: CN=*.rickandmortyapi.com
+11:27:25.107 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  peer alternative names: [*.rickandmortyapi.com, rickandmortyapi.com]
+11:27:25.107 [Test worker] DEBUG org.apache.http.conn.ssl.SSLConnectionSocketFactory -  issuer principal: CN=R3, O=Let's Encrypt, C=US
+11:27:25.128 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.0.2:29325<->52.44.140.30:443
+11:27:25.128 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+11:27:25.129 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request GET /api/character/2 HTTP/1.1
+11:27:25.131 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+11:27:25.133 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+11:27:25.140 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> GET /api/character/2 HTTP/1.1
+11:27:25.140 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: rickandmortyapi.com
+11:27:25.140 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+11:27:25.141 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)
+11:27:25.143 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+11:27:25.143 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "GET /api/character/2 HTTP/1.1[\r][\n]"
+11:27:25.145 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: rickandmortyapi.com[\r][\n]"
+11:27:25.145 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+11:27:25.146 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_192)[\r][\n]"
+11:27:25.147 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+11:27:25.147 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+11:27:25.238 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+11:27:25.239 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+11:27:25.239 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: max-age=259200[\r][\n]"
+11:27:25.239 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Cache-Control: public[\r][\n]"
+11:27:25.240 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json; charset=utf-8[\r][\n]"
+11:27:25.240 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Thu, 25 Feb 2021 00:58:26 GMT[\r][\n]"
+11:27:25.240 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Etag: W/"8ea-ZA9weQPmxFAkYzTjvuDkuOc/B1Y"[\r][\n]"
+11:27:25.241 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Expires: Sun, 28 Feb 2021 00:58:26 GMT[\r][\n]"
+11:27:25.241 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: Netlify[\r][\n]"
+11:27:25.241 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-Powered-By: Express[\r][\n]"
+11:27:25.242 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+11:27:25.242 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 375[\r][\n]"
+11:27:25.243 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Age: 142138[\r][\n]"
+11:27:25.244 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+11:27:25.244 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+11:27:25.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "X-NF-Request-ID: 50a0c90b-7f36-43e7-a4ad-efb5e83a0e5c-2090461[\r][\n]"
+11:27:25.245 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+11:27:25.351 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+11:27:25.352 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+11:27:25.352 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: max-age=259200
+11:27:25.353 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Cache-Control: public
+11:27:25.353 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json; charset=utf-8
+11:27:25.353 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Thu, 25 Feb 2021 00:58:26 GMT
+11:27:25.354 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Etag: W/"8ea-ZA9weQPmxFAkYzTjvuDkuOc/B1Y"
+11:27:25.354 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Expires: Sun, 28 Feb 2021 00:58:26 GMT
+11:27:25.355 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: Netlify
+11:27:25.355 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-Powered-By: Express
+11:27:25.356 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+11:27:25.356 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 375
+11:27:25.356 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Age: 142138
+11:27:25.357 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+11:27:25.357 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+11:27:25.357 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << X-NF-Request-ID: 50a0c90b-7f36-43e7-a4ad-efb5e83a0e5c-2090461
+11:27:25.518 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+11:27:25.559 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x9d][0xd6]=O[0xc3]0[0x10][0x6][0xe0][0xbf]Ry[0x2][0xa9]mr[0xe7][0x94][0x96]l[0x8][0x90]XX[0x80][0x9][0xc4]pr[0xac][0xc4][0x90]/9n[0xa5][0xaa][0xea]]]>&#x7f;<![CDATA[[0xc7][0x96][0xa8][0x18][0x18][0xe8][0xcb][0xe4][0xe4][0xf4][0xfa][0xec][0xe8]Q[0xe2][0x1c][0x94][0xab]T[0xc9]s[0xd5]KgU[0xa9][0x1e][0x7][0x1f][0xf6][0xb3][0xe7][0xce][0x85]F[0xcd][0xd5][0x14]$l[0xa7]X[0xbe]i[0xdd][0xce][0xa6][0xc2]h[0x8d][0xb3][0xa9][0xf2][0xb0][0xed][0xa4][0x8f][0x95][0xb0][0x1f][0xd3][0xbc]xU[0xdb][0xbe][0xb2]>[0xf5][0x90]6e[0x7][0xef]j[0xd7][0xab][0xf2]p[0xea]}/>4[0xb3][0x8b][0xdb][0x5][0xe9][0xf5]e[0xc]l}[0x1b][0xab]M[0x8][0xe3]Tf[0x99]w[0xe6]S[0xfa][0xaa]K[0x1b][0x90][0xd1]-[0xcd][0xd0]eq[0xcc][0xda][0xc1]HpC[0x9f][0x91]:[0xce][0xd5][0xe9][0xee]w[0xdb]';[0xb6]blg[0xfb]0[0xbb]sq[0x98]b[0xec][0x1f][0xcb]p[0x9e][0xd6]q[0x9d][0xd4][0xf6][0x8c]i[0xa6][0x11]/&X[0x9f][0xc9]N[0x82][0xf8][0x8c][0x97][0x1f][0xa3][0xad][0xe3][0xb2]vt[0xd3]P[0xc5][0x1e]o]]>&#x7f;<![CDATA[6[0xf9][0x8e][0xc6]'[0x9c][0x9f][0x9d]e [0xab][0x81]l[0x1]dW@[0xf6][\n]"
+11:27:25.560 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xc8][0xae][0x81][0xec][0x6][0xc8]^[0x3]Y[0xca][0x91]0"G[0x8][0x1d]!v[0x84][0xe0][0x11][0xa2]G[0x8][0x1f]!~[0x84][0x0][0x12]"[0xc8][0x88] C[0xef][0x1e]"[0xc8][0x88] #[0x82][0x8c][0x8]2"[0xc8][0x88] #[0x82][0x8c][0x8]jDP#[0x82][0x1a][0xfa]|"[0x82][0x1a][0x11][0xd4][0x88][0xa0]F[0x4]5"[0xa8][0x11]A[0x8d][0x8][0x16][0x88]`A[0xea][0xfd][0xdc][0xe3][0xfa][0xe7][0xdc]M[0x92][0xc6][[0x9]6[0xfe][0xc8]([0xce]i[0xbd] Z[0xe4][0xc5][0xb]m[0xca]U^2-[0xaf]V[0xf4][0xaa][0x8e]_pQCA[0xea][0x8][0x0][0x0]"
+11:27:25.561 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {s}->https://rickandmortyapi.com:443] can be kept alive indefinitely
+11:27:25.565 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+11:27:25.566 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {s}->https://rickandmortyapi.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+11:27:25.566 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 1039,70
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 142138
+1 < Cache-Control: [max-age=259200, public]
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Thu, 25 Feb 2021 00:58:26 GMT
+1 < Etag: W/"8ea-ZA9weQPmxFAkYzTjvuDkuOc/B1Y"
+1 < Expires: Sun, 28 Feb 2021 00:58:26 GMT
+1 < Server: Netlify
+1 < Vary: Accept-Encoding
+1 < X-NF-Request-ID: 50a0c90b-7f36-43e7-a4ad-efb5e83a0e5c-2090461
+1 < X-Powered-By: Express
+{"id":2,"name":"Morty Smith","status":"Alive","species":"Human","type":"","gender":"Male","origin":{"name":"Earth (C-137)","url":"https://rickandmortyapi.com/api/location/1"},"location":{"name":"Earth (Replacement Dimension)","url":"https://rickandmortyapi.com/api/location/20"},"image":"https://rickandmortyapi.com/api/character/avatar/2.jpeg","episode":["https://rickandmortyapi.com/api/episode/1","https://rickandmortyapi.com/api/episode/2","https://rickandmortyapi.com/api/episode/3","https://rickandmortyapi.com/api/episode/4","https://rickandmortyapi.com/api/episode/5","https://rickandmortyapi.com/api/episode/6","https://rickandmortyapi.com/api/episode/7","https://rickandmortyapi.com/api/episode/8","https://rickandmortyapi.com/api/episode/9","https://rickandmortyapi.com/api/episode/10","https://rickandmortyapi.com/api/episode/11","https://rickandmortyapi.com/api/episode/12","https://rickandmortyapi.com/api/episode/13","https://rickandmortyapi.com/api/episode/14","https://rickandmortyapi.com/api/episode/15","https://rickandmortyapi.com/api/episode/16","https://rickandmortyapi.com/api/episode/17","https://rickandmortyapi.com/api/episode/18","https://rickandmortyapi.com/api/episode/19","https://rickandmortyapi.com/api/episode/20","https://rickandmortyapi.com/api/episode/21","https://rickandmortyapi.com/api/episode/22","https://rickandmortyapi.com/api/episode/23","https://rickandmortyapi.com/api/episode/24","https://rickandmortyapi.com/api/episode/25","https://rickandmortyapi.com/api/episode/26","https://rickandmortyapi.com/api/episode/27","https://rickandmortyapi.com/api/episode/28","https://rickandmortyapi.com/api/episode/29","https://rickandmortyapi.com/api/episode/30","https://rickandmortyapi.com/api/episode/31","https://rickandmortyapi.com/api/episode/32","https://rickandmortyapi.com/api/episode/33","https://rickandmortyapi.com/api/episode/34","https://rickandmortyapi.com/api/episode/35","https://rickandmortyapi.com/api/episode/36","https://rickandmortyapi.com/api/episode/37","https://rickandmortyapi.com/api/episode/38","https://rickandmortyapi.com/api/episode/39","https://rickandmortyapi.com/api/episode/40","https://rickandmortyapi.com/api/episode/41"],"url":"https://rickandmortyapi.com/api/character/2","created":"2017-11-04T18:50:21.651Z"}
+
+11:27:25.585 [Test worker] DEBUG com.jayway.jsonpath.internal.path.CompiledPath - Evaluating path: $
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

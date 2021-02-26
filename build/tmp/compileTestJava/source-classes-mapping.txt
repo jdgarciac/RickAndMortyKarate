@@ -1,7 +1,5 @@
 runners/karate/KarateGetMultipleEpisode.java
  runners.karate.KarateGetMultipleEpisode
-runners/karate/KarateGetLocation.java
- runners.karate.KarateGetLocation
 runners/karate/KarateGetMultipleCharacters.java
  runners.karate.KarateGetMultipleCharacters
 runners/karate/KarateGetCharacter.java
@@ -10,3 +8,5 @@ runners/karate/KarateGetEpisode.java
  runners.karate.KarateGetEpisode
 runners/karate/KarateGetMultipleLocations.java
  runners.karate.KarateGetMultipleLocations
+runners/karate/KarateGetLocation.java
+ runners.karate.KarateGetLocation

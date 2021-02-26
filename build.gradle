@@ -21,24 +21,11 @@ buildscript {
 allprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
-    apply plugin: 'net.serenity-bdd.aggregator'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 }
 
-ext{
-    serenityVersion = '2.1.8'
-    serenityCucumberVersion = '1.9.45'}
 dependencies {
-
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.assertj:assertj-core:3.6.2'
-    testImplementation "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
-    testImplementation "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
-    testImplementation "net.serenity-bdd:serenity-screenplay-rest:$rootProject.ext.serenityVersion"
-
-
-    implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
     implementation group: 'com.intuit.karate', name: 'karate-apache', version: '0.9.5'
     implementation group: 'com.intuit.karate', name: 'karate-junit4', version: '0.9.5'
 }
